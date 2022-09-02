@@ -1,0 +1,65 @@
+BAHASA PEMROGRAMAN YANG DIPAKAI:
+------------------------------->
+1.  NodeJS dengan bantuan Framework ExpressJS
+2.  Database MySQL
+
+SOFTWARE YANG DIBUTUHKAN:
+------------------------>
+1.  Apache HTTP Server: XAMPP / MAMP / Laragon / dsb...
+2.  MySQL database: Phpmyadmin / Mysql Workbench / Navicat / dsb ...
+3.  Browser: Google Chrome
+4.  Code Editor: VS Code
+5.  Management API: Postman
+7.  CLI: Command Line / Git Bash / Power Shell / iTerminal / dsb ...
+6.  NodeJS (https://nodejs.org/en/)
+
+LINK PROJECT
+------------>
+https://github.com/fajrulaslim/padepokan79_fajrulaslim_BackEnd_02092022
+
+LANGKAH MENJALANKAN APLIKASI
+---------------------------->
+1.  PERSIAPAN PROJECT
+    -   Silahkan unduh/clone project pada link terlampir, letakkan dalam sebuah folder dengan nama "padepokan79_nodejs".
+    -   Buka aplikasi command line, dan arahkan rootnya  menuju folder project.
+    -   Ketikkan "npm install"
+
+2.  PERSIAPAN DATABASE
+    Silahkan pilih salah satu dari 2 cara berikut:
+    #   CARA1
+    -   Buka Phpmyadmin  / Mysql Workbench, buat database baru dengan nama "db_padepokan79"
+    -   Lakukan import database. File database terdapat pada folder -> #Database -> db_padepokan79.sql
+
+    #   CARA2
+    -   Buka Phpmyadmin  / Mysql Workbench, buat database baru dengan nama "db_padepokan79"
+    -   Buka kembali command line yang sudah diarahkan ke folder project tadi. Ketikkan perintah berikut:
+        1) npx sequelize db:migrate (untuk membuat table pada database)
+        2) npx sequelize db:seed:all (untuk mengisi table dengan data dummy)
+
+3.  PERSIAPAN API PADA POSTMAN
+    -   Buka Postman, klik Menu -> File -> Import
+    -   Pilih file yang terdapat pada folder project -> #Dokumentasi API -> Padepokan79-API-Test.postman_collection.json
+
+3.  MENJALANKAN APLIKASI
+    - Buka kembali command line yang sudah diarahkan ke folder project tadi. Ketikkan perintah berikut: "npm run dev"
+    - Aplikasi sudah dapat dijalankan menggunakan link: http://localhost:5000
+    - Ada 2 cara menjalankan aplikasi:
+    - Menggunakan POSTMAN, yaitu untuk mengetes API. Sesuai file Dokumentasi yang sudah diimport sebelumnya.
+    - atau, Menggunakan Browser, dengan membuka halaman http://localhost:5000
+
+CATATAN
+1. Nama database harus sama dengan nama file database yang terdapat pada file project yaitu "db_padepokan79".
+2. Jika ingin mengganti nama database ikuti langkah berikut:
+	- Buka Software MySQL Database Anda, buat database dengan nama misal: "tes-fajrulaslim"
+ 	- Buka file ".env", pada folder project, ganti DB_NAME=padepokan79 menjadi DB_NAME=tes-fajrulaslim
+    - Lakukan ulang langkah-langkah menjalankan aplikasi
+2. Jika ingin mengganti port ikuti langkah berikut:
+ 	- Buka file ".env", pada folder project, ganti PORT=5000 menjadi PORT=[apa yang diinginkan]
+    - Jalankan ulang aplikasi
+4. Jika ingin mengganti password database ikuti langkah berikut:
+ 	- Buka file ".env", pada folder project, ganti DB_PASSWORD= menjadi DB_PASSWORD=[apa yang diinginkan]
+    - Jalankan ulang aplikasi
+
+Jika ada kendala, silahkan hubungi Saya (Kandidat).
+
+Terima Kasih

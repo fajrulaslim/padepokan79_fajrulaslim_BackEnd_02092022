@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "c2f9107a-5d38-4a23-aa7d-15393af42d20",
+		"name": "Padepokan79-API-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19533299"
+	},
+	"item": [
+		{
+			"name": "Tugas01",
+			"item": [
+				{
+					"name": "GetAllNasabah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/nasabah",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"nasabah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetNasabahById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/nasabah/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"nasabah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddNasabah",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Customer5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/nasabah",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"nasabah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateNasabah",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 3,\r\n    \"name\": \"Customer3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/nasabah",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"nasabah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteNasabah",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/nasabah/3",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"nasabah",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tugas02",
+			"item": [
+				{
+					"name": "GetAllTransaksi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/transaksi",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTransaksiById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/transaksi/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"transaksi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddTransaksi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 3,\r\n    \"transactionDate\": \"2022-08-30T00:00:00.000Z\",\r\n    \"description\": \"Setor Tunai\",\r\n    \"debitCreditStatus\": \"C\",\r\n    \"amount\": \"200000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/transaksi",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTransaksi",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"accountId\": 1,\r\n    \"transactionDate\": \"2022-08-25T00:00:00.000Z\",\r\n    \"description\": \"Setor Tunai\",\r\n    \"debitCreditStatus\": \"C\",\r\n    \"amount\": \"200000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/transaksi",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteTransaksi",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/transaksi/13",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"transaksi",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tugas03",
+			"item": [
+				{
+					"name": "GetAllPoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/point_nasabah",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"point_nasabah"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tugas04",
+			"item": [
+				{
+					"name": "GetAllReport",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 1,\r\n    \"startDate\": \"2022-09-01\",\r\n    \"endDate\": \"2022-09-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/report",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
